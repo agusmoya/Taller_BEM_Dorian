@@ -1,0 +1,31 @@
+/**
+**   BEM: Block Element Modifier ---> BLOQUE ELEMENTO MODIFICADOR
+**   
+**   Esto nos permitirá organizar el css de forma tal que, al mirar un elemento
+**   vamos a saber a qué padre o bloque pertenece. De esta manera podremos mantener los 
+**   estilos organizados y escalarlos de manera adecuada.
+**   
+**   Un BLOQUE: es el elemento contenedor de un conjunto de otros elementos que existen en
+**   su interior. Ojo, que para el caso del <nav></nav> no sería un bloque
+**   
+**   En este caso el <ul></ul> sería un BLOQUE, ya que los <li></li> no pueden funcionar 
+**   por separado, auqneu el <ul></ul> llevado a otro sitio seguiría funcionando. 
+**   Los <li></li> y los <a></a> son ELEMENTOS.
+**   
+**   Los MODIFICADORES sirven para que los elementos que necesitan una modificación se
+**   declaren de forma clara y así no sobreescribir estilos, es decir, sólo ponemos aquello
+**   que se modifica.
+**   
+**   
+** */
+
+body {
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.main-nav{
+    background-color: #fff;
+}

@@ -4,15 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles-dist.css">
     <title>Taller BEM</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="#">Item 1</a></li>
-        <li><a href="#">Item 2</a></li>
-        <li><a href="#">Item 3</a></li>
-        <li><a href="#">Item 4</a></li>
+    <nav class="main-nav">
+      <ul class="main-menu">
+        <li class="main-menu__item">
+          <!-- 
+            aquí no podemos colocar <a class="main-menu__item__link">
+            ya que en BEM no puede haber nietos (dos barras bajas
+            consecutivas es indicador de que estamos haciendo las cosas mal)
+          -->
+          <a class="main-menu__link" href="#">Item 1</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Item 2</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Item 4</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Item 4</a>
+        </li>
       </ul>
     </nav>
   </body>
