@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles-dist.css">
+    <link rel="stylesheet" href="css/styles-dist.css" />
     <title>Taller BEM</title>
   </head>
   <body>
     <nav class="main-nav">
-      <ul class="main-menu">
+      <ul id="main-menu" class="main-menu">
         <li class="main-menu__item">
           <!-- 
             aquí no podemos colocar <a class="main-menu__item__link">
             ya que en BEM no puede haber nietos (dos barras bajas
             consecutivas es indicador de que estamos haciendo las cosas mal)
           -->
-          <a class="main-menu__link" href="#">Item 1</a>
+          <a class="main-menu__link main-menu__link--active" href="#">Item 1</a>
         </li>
         <li class="main-menu__item">
           <a class="main-menu__link" href="#">Item 2</a>
@@ -29,5 +29,25 @@
         </li>
       </ul>
     </nav>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem
+      nisi praesentium rerum tenetur reprehenderit doloremque laborum dolor
+      expedita libero, consequatur architecto porro blanditiis dolore ipsa
+      sapiente rem alias perspiciatis quasi?
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem
+      nisi praesentium rerum tenetur reprehenderit doloremque laborum dolor
+      expedita libero, consequatur architecto porro blanditiis dolore ipsa
+      sapiente rem alias perspiciatis quasi?
+    </p>
+    <div class="buttons">
+      <button class="button button--dark">Boton 1</button>
+      <button class="button button--red">Boton 2</button>
+      <button class="button button--ghost">Boton 3</button>
+      <button class="button button--blue">Boton 4</button>
+    </div>
+    <button class="button button--dark button--block">Boton 5</button>
+    <script src="js/script.js"></script>
   </body>
 </html>
