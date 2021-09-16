@@ -77,6 +77,7 @@ body {
     background-color: lightcoral;
     color: antiquewhite;
     text-transform: uppercase;
+    margin-bottom: 2rem;
 }
 
 .button--dark {
@@ -102,4 +103,77 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
+}
+
+.img-container {
+    position: relative;
+    margin: 2rem auto;
+    overflow: hidden;
+    border: 1px solid #333;
+}
+
+.img-container::after,
+.img-container::before {
+    /* prop content es obligatoria. Siempre ponerla aunque swea vacía */
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.img-container::before {
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    backdrop-filter: blur(10px);
+}
+
+.img-container::after {
+    content: 'Gato Pidiendo Comida';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 2rem;
+}
+
+/* EFECTO 1 */
+.img-container--scale::after,
+.img-container--scale::before {
+    transform: scale(0);
+}
+
+.img-container:hover.img-container--scale::after,
+.img-container:hover.img-container--scale::before {
+    transform: scale(1);
+}
+
+/* EFECTO 2 */
+.img-container--left::after,
+.img-container--left::before {
+    transform: translateX(-100%);
+}
+
+.img-container:hover.img-container--left::after,
+.img-container:hover.img-container--left::before {
+    transform: translateX(0);
+}
+
+/* EFECTO 3 */
+.img-container--bottom::after,
+.img-container--bottom::before {
+    transform: translateY(100%);
+}
+
+.img-container:hover.img-container--bottom::after,
+.img-container:hover.img-container--bottom::before {
+    transform: translateY(0);
+}
+
+/** ::after y ::before (pseudoelementos) no se admiten en las imagenes**/
+/* no es ni block ni inline ni inline-block */
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
