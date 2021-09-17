@@ -177,3 +177,36 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+/** SEGUNDA PARTE **/
+
+.card {
+    width: 350px;
+    background-color: #aaa;
+    color: #000;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    box-shadow: 5px 5px 7px 0 rgb(29, 28, 28);
+}
+
+.card__figure {
+    margin: 0;
+}
+
+.card__img {
+    border-radius: 15px;
+    max-width: 100%;
+}
+
+.card__figcaption {
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.card__buttons {
+    display: flex;
+    justify-content: space-evenly;
+}

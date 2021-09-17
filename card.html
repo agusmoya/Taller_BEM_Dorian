@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="css/style-card-dist.css" />
+    <link rel="stylesheet" href="css/styles-dist.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Card con BEM</title>
   </head>
@@ -13,7 +13,25 @@
       <div class="card__header">
         <figure class="card__figure">
           <img class="card__img" src="assets/images/cat.jpeg" alt="Cat image" />
+          <figcaption class="card__figcaption">Gato común</figcaption>
         </figure>
+      </div>
+      <div class="card__body">
+        <h2 class="card__title">Gato Hambriento</h2>
+        <!-- Para los subtitulos, la W3S recomiendan un p -->
+        <p class="card__subtitle">Subgato</p>
+        <p class="card__info">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores aut
+          dolore velit autem labore ut nostrum adipisci inventore modi quas
+          distinctio tempore beatae magnam aspernatur nihil suscipit, saepe
+          error tempora?
+        </p>
+      </div>
+      <div class="card__footer">
+        <div class="card__buttons">
+          <button class="button button--dark">Compartir</button>
+          <button class="button button--ghost">Compartir</button>
+        </div>
       </div>
     </div>
   </body>
